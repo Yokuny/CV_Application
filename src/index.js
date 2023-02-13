@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./style/index.css";
 import App from "./App";
-
+import "./style/reset.css";
+import { BodyDisplay } from "./style/style";
+import Title from "./components/Title";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <BodyDisplay>
+    <Title title={"Gerador de curriculo"} />
     <App />
-  </React.StrictMode>
+  </BodyDisplay>
 );
