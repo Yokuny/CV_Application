@@ -9,9 +9,9 @@ const Form = styled.form`
   width: 600px;
 `;
 const Input = styled.input`
-  width: 100%;
   padding: 10px;
-  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 4px;
 
   font-size: 16px;
   color: rgb(236, 98, 162);
@@ -21,12 +21,10 @@ const Input = styled.input`
   outline: 0px;
   border: 4px solid transparent;
   border-bottom: 2px solid rgb(236, 98, 162);
-
   background-color: transparent;
+
   &:focus {
-    /* Lidar com isso >> arranjar um jeito de o componente não movimentar quando eu coloco-o em focus */
-    border: 4px solid transparent;
-    border-top: 4px solid transparent;
+    margin-bottom: 2px;
     border-bottom: 4px solid rgb(236, 98, 162);
   }
 `;
@@ -35,6 +33,7 @@ const ButtonsDisplace = styled.div`
   margin-top: 2vh;
   display: flex;
   justify-content: space-between;
+
   button {
     padding: 16px;
     border: 1px #000 solid;
@@ -42,6 +41,7 @@ const ButtonsDisplace = styled.div`
     font-size: 16px;
     font-weight: 600;
     color: white;
+
     background-color: rgb(233, 70, 146);
     cursor: pointer;
   }
