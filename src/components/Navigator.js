@@ -1,33 +1,25 @@
 import styled from "styled-components";
 import { ArrowUp, ArrowDown } from "../assets/Arrows";
-const Arrow = styled.button`
-  width: 40px;
-  height: 36px;
-  border: 1px #000 solid;
-  background-color: rgb(233, 70, 146);
-  cursor: pointer;
-  &:hover {
-    svg {
-      fill: #d4d4d4;
-    }
-  }
-`;
-const ButtonsDisplace = styled.div`
-  margin-top: 4vh;
-  width: 100%;
+
+const NavigateArrows = styled.div`
   display: flex;
-  justify-content: flex-end;
+`;
+const Arrow = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
 `;
 function Navigator() {
   return (
-    <ButtonsDisplace>
+    <NavigateArrows>
       <Arrow>
         <ArrowUp />
       </Arrow>
       <Arrow>
         <ArrowDown />
       </Arrow>
-    </ButtonsDisplace>
+    </NavigateArrows>
   );
 }
 export default Navigator;
